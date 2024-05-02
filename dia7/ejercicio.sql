@@ -22,8 +22,8 @@ create table cuentas (
     numero_cuenta varchar not null,
     fecha_creacion date not null,
     balance int not null,
-    cliente_id int,
-    FOREIGN KEY (cliente_id) REFERENCES clientes(id)
+    cliente_id int not null,
+    foreign key (cliente_id) references clientes(id)
 );
 
 select * from cuentas;
