@@ -51,6 +51,7 @@ CREATE USER felipe WITH PASSWORD 'Admin1234';
 CREATE DATABASE felipe WITH OWNER felipe;
 
 --Paso 3: Establecer permisos al usuario
-ALTER USER felipe WITH
+ALTER USER felipe WITH SUPERUSER CREATEDB CREATEROLE LOGIN
 
 
+TRUNCATE phones;
