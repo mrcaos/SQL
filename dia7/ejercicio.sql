@@ -21,7 +21,7 @@ create table cuentas (
     id serial primary key,
     numero_cuenta varchar not null,
     fecha_creacion date not null,
-    balance int not null,
+    balance int not null default 0,
     cliente_id int not null,
     foreign key (cliente_id) references clientes(id)
 );
