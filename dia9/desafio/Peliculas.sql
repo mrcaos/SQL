@@ -7,8 +7,8 @@ CREATE TABLE reparto ( pelicula_id INT, actor VARCHAR, FOREIGN KEY (pelicula_id)
 truncate peliculas;
 select *from reparto;
 
-copy peliculas from 'C:/python/M5_BASE_DATOS/dia9/desafio/peliculas.csv' delimiter ',' csv header;
-copy reparto from 'C:/python/M5_BASE_DATOS/dia9/desafio/reparto.csv' delimiter ',' csv header;
+copy peliculas from 'C:/python/M5/dia9/desafio/peliculas.csv' delimiter ',' csv header;
+copy reparto from 'C:/python/M5/dia9/desafio/reparto.csv' delimiter ',' csv header;
 
 select * from peliculas;
 select *from reparto;
